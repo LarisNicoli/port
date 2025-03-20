@@ -10,7 +10,7 @@ header{
   text-align: center;
 }
 
-h1, h3{
+h1{
   font-family: "Oswald", sans-serif;
   background-color: #dbcfe6;
   border-bottom: groove #290742;
@@ -36,10 +36,12 @@ font-family: "Merriweather", serif;
 
 #nav ul li a:hover {
   color: #f9b5fc;
+  border-bottom: 2px solid;
 }
 
 #main div{
   display: flex;
+  padding: 30px;
 }
 
 #main hgroup p {
@@ -76,7 +78,16 @@ font-family: "Merriweather", serif;
 }
 
 #galery h3{
-  margin-top: 20px;
+  margin: 20px;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: initial;
+}
+
+#galery ul li a{
+text-decoration: none;
+color: #290742;
+font-family: "Merriweather", serif;
 }
 
 .img-galery{
@@ -95,6 +106,24 @@ footer{
   display: flex;
   gap: 20px;
   list-style: none;
+}
+
+#address ul li a {
+  text-decoration: none;
+  color: #290742;
+  font-family: "Merriweather", serif;
+}
+
+#address ul li a:hover {
+  color: #f9b5fc;
+  border-bottom: 2px solid;
+}
+
+#address h4, ul li {
+  
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: initial;
 }
 
 @keyframes slidein {
